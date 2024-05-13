@@ -27,20 +27,24 @@ const SearchInput = () => {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
-      router.push(`/search/${values.input}`);
-      form.reset();
+    router.push(`/search/${values.input}`);
+    form.reset();
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className=' w-[70px] sm:w-full'>
         <FormField
           control={form.control}
           name='input'
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder='Search...' {...field} className="bg-transparent text-white placeholder:text-white" />
+                <Input
+                  placeholder='Search...'
+                  {...field}
+                  className='opacity-25 text-white placeholder:text-black dark:placeholder:text-white'
+                />
               </FormControl>
             </FormItem>
           )}

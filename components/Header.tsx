@@ -17,7 +17,7 @@ const Header = () => {
           src='https://links.papareact.com/a943ae'
           width={120}
           height={100}
-          className='cursor-pointer invert dark:invertt'
+          className='cursor-pointer invert w-20'
         />
       </Link>
       <div className="flex items-center gap-1 sm:gap-2">
