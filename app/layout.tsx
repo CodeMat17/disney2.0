@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Disney Clone",
-  description: "Disney clone for my portfolio",
+  description: "Disney clone for my portfolio. Developed by Matthew Chukwu",
 };
 
 export default function RootLayout({
