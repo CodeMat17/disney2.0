@@ -43,7 +43,7 @@ const SearchInput = () => {
                 <Input
                   placeholder='Search...'
                   {...field}
-                  className='opacity-25 text-white placeholder:text-black dark:placeholder:text-white'
+                  className='opacity-35 text-white placeholder:text-black dark:placeholder:text-white'
                 />
               </FormControl>
             </FormItem>
