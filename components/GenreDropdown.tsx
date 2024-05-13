@@ -39,11 +39,9 @@ const GenreDropdown = async () => {
         <DropdownMenuSeparator />
 
         {data.genres.map((genre) => (
-          <DropdownMenuItem key={genre.id}>
-            <Link href={`/genre/${genre.id}?genre=${genre.name}`}>
-              {genre.name}
-            </Link>
-          </DropdownMenuItem>
+          <Link href={`/genre/${genre.id}?genre=${genre.name}`} key={genre.id}>
+            <DropdownMenuItem>{genre.name}</DropdownMenuItem>
+          </Link>
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
